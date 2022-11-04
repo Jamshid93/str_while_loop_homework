@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i=0
+    lower=""
+    while i<len(s):
+        if s[i].islower():
+            lower+=s[i]
+        i+=1
+    lower=len(lower)
+    return int(lower)
+print(main("CodeschoolUz"))
