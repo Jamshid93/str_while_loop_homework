@@ -14,5 +14,5 @@ def main(s):
             count+=s[i]
         i+=1
     count=len(count)
-    return count
+    return int(count)
 print(main("e324xE"))
