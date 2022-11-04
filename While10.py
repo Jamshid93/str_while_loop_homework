@@ -6,4 +6,10 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i=0
+    a=int(s)
+    while a!=0:
+        i+=a%10
+        a//=10
+    return i
+print(main("589765"))    
