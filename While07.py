@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i=0
+    count=""
+    while i<len(s):
+        if int(s[i])%2==0:
+            count+=s[i]
+        i+=1
+    count=len(count)
+    return int(count)
+print(main("123456"))
