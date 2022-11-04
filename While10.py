@@ -7,11 +7,11 @@ def main(s):
         int: return answer
     """
     i=0
-    a=int(s)
-    while a!=0:
-        a=a%10
-        a//=10
-        if a%2!=0:
-            i+=a
-    return i
+    q = 0
+    while i<len(s):
+        i_s = int(s[i])
+        if i_s % 2 == 1:
+            q+=i_s
+        i+=1
+    return q 
 print(main("589765"))    
