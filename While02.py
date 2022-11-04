@@ -7,7 +7,11 @@ def main(s):
         int: return answer
     """
     i=0
+    count=""
     while i<len(s):
         if s[i].isalpha():
-            
-    return
+            count+=s[i]
+        i+=1
+    count=len(count)
+    return count
+print(main("Python 2022"))
