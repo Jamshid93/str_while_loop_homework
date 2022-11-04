@@ -9,7 +9,9 @@ def main(s):
     i=0
     a=int(s)
     while a!=0:
-        i+=a%10
+        a=a%10
         a//=10
+        if a%2!=0:
+            i+=a
     return i
 print(main("589765"))    
